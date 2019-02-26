@@ -54,7 +54,6 @@ $(document).ready(function(){
   // Clique nos botões de navegação entre etapas scrolla página para o topo
 
   $(".voltarEtapa, .avancarEtapa").on("click", function(){
-    console.log("foi");
     $('html,body').scrollTop(0);
   })
 
