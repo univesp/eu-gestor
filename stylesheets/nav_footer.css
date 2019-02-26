@@ -1,0 +1,76 @@
+/* Botão Pular para Conteúdo Principal */
+
+nav .logo .pularNavegacao {
+  background-color: #364552!important;
+  color: white!important;
+}
+
+/* Caixa do Logotipo */
+
+nav .logo img {
+  background-color: #364552!important;
+}
+
+/* Botões do Navbar */
+
+nav .nav-link {
+  color: white!important;
+  background-color: #364552!important;
+}
+
+nav .nav-link:focus,
+nav .nav-link:hover,
+nav .nav-link[aria-expanded="true"] {
+  background-color: #452E94;
+  color: white;
+}
+
+/* Rodapé */
+
+footer p, footer p span {
+  color: white;
+  font-weight: normal;
+}
+
+footer .btn {
+  white-space: nowrap;
+}
+
+footer, footer .aval-rea .btn-secondary {
+  background-color: #364552;
+  color: white;
+}
+
+footer .aval-rea .btn-secondary {
+  border-color: white;
+}
+
+footer .aval-rea .btn-secondary:hover,
+footer .aval-rea .btn-secondary:focus {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+footer .cred-rea span:not(:last-child) {
+  border-color: white;
+}
+
+footer a, footer a:hover,
+footer a:active, footer a:focus {
+  font-weight: normal;
+}
+
+/* Main */
+
+main {
+  padding-top: 105px;
+  padding-bottom: 3rem;
+}
+
+@media only screen and (max-width: 992px) {
+
+  main {
+    padding-top: 6rem;
+    padding-bottom: 2rem;
+  }
+
+}
