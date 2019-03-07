@@ -4,7 +4,7 @@ $(document).ready(function(){
   // Por padrão, mostra no topo e fim da página.
   // Remova ou reescreva de acordo com o projeto.
 
-  $(window).scroll(function(){
+  $(window).on('scroll', _.debounce(function(){
 
     var nav = $("nav");
     var scroll = $(window).scrollTop();
@@ -12,7 +12,7 @@ $(document).ready(function(){
     // Mostra o nav quando a página está no topo
     if(scroll == 0){
       nav.fadeIn();
-    //Mostra a nav quando a página chega no fim
+    // Mostra a nav quando a página chega no fim
     } else if (scroll == $(document).height() - $(window).height()) {
       nav.fadeIn();
     //Esconde a nav
@@ -20,7 +20,7 @@ $(document).ready(function(){
       nav.fadeOut();
     }
 
-  });
+  }, 50));
 
   // Volta uma etapa
 
